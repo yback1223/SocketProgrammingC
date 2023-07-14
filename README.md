@@ -1,7 +1,5 @@
 # README
 
-중요한 개념들을 기록
-
 ## helloWorldServer.c
 
 `listen(s_socket, 5)`
@@ -27,3 +25,9 @@
 `read(c_socket, rcvBuffer, sizeof(rcvBuffer))`
 
 - c_socket으로 부터 데이터를 읽는다.
+
+## socketPair.c
+
+`result = socketpair(PF_LOCAL, SOCK_STREAM, 0, sd);`
+
+- socket을 두 개 생성하고, 심지어 두 소켓을 연결까지 해준다.
